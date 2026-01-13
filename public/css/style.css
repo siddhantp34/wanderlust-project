@@ -1,0 +1,157 @@
+/* =========================================
+   1. General Layout
+   ========================================= */
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* =========================================
+   2. Navbar Styling
+   ========================================= */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* =========================================
+   3. Professional Unified Search Bar
+   ========================================= */
+.search-group {
+    border: 1px solid #ced4da;
+    border-radius: 30px !important; /* Professional rounded edges */
+    overflow: hidden; /* Clips the button to the rounded edges */
+    width: 350px;
+    background-color: white;
+}
+
+.search-input {
+    border: none !important; /* Removes the line between input and button */
+    padding: 0.6rem 1.5rem !important;
+    font-size: 0.95rem;
+    box-shadow: none !important; /* Removes blue glow when typing */
+}
+
+.search-btn {
+    background-color: #fe424d !important; /* Airbnb Red */
+    color: #fff !important; /* White text and icon */
+    border: none !important;
+    padding: 0 1.5rem !important;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+    background-color: #e33c46 !important;
+    color: #fff !important;
+}
+
+.search-btn i {
+    margin-right: 0.4rem;
+}
+
+/* =========================================
+   4. Index Page: Filters & Cards
+   ========================================= */
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter p {
+    font-size: 0.8rem;
+    color: #222222;
+}
+
+.listing-link {
+    text-decoration: none !important; /* Removes link underline */
+}
+
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-text {
+    color: #222222 !important;
+}
+
+/* =========================================
+   5. Show Page: Images & Buttons
+   ========================================= */
+.show-img {
+    height: 30vh;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+/* FIX: Forces Edit and Delete buttons to be in the same line */
+.show-btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.show-btns form {
+    margin: 0;
+}
+
+.add-btn, .edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.delete-btn {
+    background-color: #222222 !important;
+    color: white !important;
+    border-radius: 8px !important;
+}
+
+/* =========================================
+   6. Footer
+   ========================================= */
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
