@@ -101,6 +101,12 @@ app.use((req, res, next) => {
 // ERROR HANDLER
 app.use((err, req, res, next) => {
     let { statusCode = 500, message = "Something went wrong!" } = err;
+    
+    // Add this safeguard
+    if (res.headersSent) {
+        return next(err);
+    }
+    
     res.status(statusCode).render("error.ejs", { err }); 
 });
 
